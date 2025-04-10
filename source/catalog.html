@@ -11,16 +11,17 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img class="main-header__logo-image" src="images/logo-desktop.svg" width="202" height="59" alt="Кэт энерджи">
+    <a class="main-header__logo logo" href="#">
+      <img class="logo__image" src="images/logo/logo-pic-mobile.svg" width="33" height="38" alt="Кэт энерджи">
+      <img class="logo__text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active"><a href="/index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="/catalog.html">Каталог продукции</a></li>
-          <li class="main-nav__item"><a href="/index.html">Подбор программы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="/index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/catalog.html">Каталог продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/index.html">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -28,12 +29,12 @@
   <main class="main-container">
     <section class="catalog">
       <div class="catalog-wrapper">
-        <h2 class="catalog__title">Каталог продукции</h2>
-        <ul class="catalog__list products">
+        <h1 class="catalog__title">Каталог продукции</h1>
+        <ul class="catalog__list">
           <li class="catalog__item product">
             <img class="product__image" src="images/catalog-1.png" width="169" height="210" alt="Продукция">
             <h3 class="product__name">Cat Energy PRO 500 г</h3>
-            <ul class="product__list properties">
+            <ul class="product__list">
               <li class="property">
                 <span class="property__name">Масса</span>
                 <span class="property__value">500 г</span>
@@ -53,7 +54,7 @@
           <li class="catalog__item product">
             <img class="product__image" src="images/catalog-2.png" width="169" height="210" alt="Продукция">
             <h3 class="product__name">Cat Energy PRO 1000 г</h3>
-            <ul class="product__list properties">
+            <ul class="product__list">
               <li class="property">
                 <span class="property__name">Масса</span>
                 <span class="property__value">1000 г</span>
@@ -73,7 +74,7 @@
           <li class="catalog__item product">
             <img class="product__image" src="images/catalog-3.png" width="169" height="210" alt="Продукция">
             <h3 class="product__name">Cat Energy PRO 500 г</h3>
-            <ul class="product__list properties">
+            <ul class="product__list">
               <li class="property">
                 <span class="property__name">Масса</span>
                 <span class="property__value">500 г</span>
@@ -93,7 +94,7 @@
           <li class="catalog__item product">
             <img class="product__image" src="images/catalog-4.png" width="169" height="210" alt="Продукция">
             <h3 class="product__name">Cat Energy PRO 1000 г</h3>
-            <ul class="product__list properties">
+            <ul class="product__list">
               <li class="property">
                 <span class="property__name">Масса</span>
                 <span class="property__value">1000 г</span>
@@ -113,7 +114,7 @@
           <li class="catalog__item product">
             <img class="product__image" src="images/catalog-5.png" width="169" height="210" alt="Продукция">
             <h3 class="product__name">Cat Energy SLIM 500 г</h3>
-            <ul class="product__list properties">
+            <ul class="product__list">
               <li class="property">
                 <span class="property__name">Масса</span>
                 <span class="property__value">500 г</span>
@@ -133,7 +134,7 @@
           <li class="catalog__item product">
             <img class="product__image" src="images/catalog-6.png" width="169" height="210" alt="Продукция">
             <h3 class="product__name">Cat Energy SLIM 1000 г</h3>
-            <ul class="product__list properties">
+            <ul class="product__list">
               <li class="property">
                 <span class="property__name">Масса</span>
                 <span class="property__value">1000 г</span>
@@ -153,7 +154,7 @@
           <li class="catalog__item product">
             <img class="product__image" src="images/catalog-7.png" width="169" height="210" alt="Продукция">
             <h3 class="product__name">Cat Energy SLIM 500 г</h3>
-            <ul class="product__list properties">
+            <ul class="product__list">
               <li class="property">
                 <span class="property__name">Масса</span>
                 <span class="property__value">500 г</span>
@@ -173,7 +174,7 @@
           <li class="catalog__item show-more">
             <div class="show-more__description">
               <h3 class="show-more__title">Показать еще 100500 товаров</h3>
-              <h4 class="show-more__subtitle">На самом деле вкусов гораздо больше!</h4>
+              <p class="show-more__subtitle">На самом деле вкусов гораздо больше!</p>
             </div>
             <a class="show-more__show-all button button--secondary" href="catalog.html">показать все</a>
           </li>
@@ -183,7 +184,7 @@
     <section class="additional-catalog">
       <h2 class="additional-catalog__title">Дополнительные товары</h2>
       <div class="additional-catalog__wrapper">
-        <ul class="additional-catalog__list additional-products">
+        <ul class="additional-catalog__list">
           <li class="additional-product">
             <h3 class="additional-product__name">Сахарозаменитель</h3>
             <span class="additional-product__benefit">1 упаковка (100 г)</span>
@@ -222,11 +223,11 @@
     <section class="advertisements">
       <h2 class="advertisements__title">Акции и новинки</h2>
       <div class="advertisements__wrapper">
-        <h3 class="advertisements__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</h3>
-        <form class="advertisements__submit-form" action="#">
+        <p class="advertisements__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <form class="advertisements__submit-form advertisements-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email">Электронная почта:</label>
-          <input class="advertisements__email" type="email" id="email" name="email" placeholder="кuklachev@gmail.com">
-          <input class="advertisements__submit button button--primary" type="submit" value="Подписаться">
+          <input class="advertisements-form__email" type="email" id="email" name="email" placeholder="кuklachev@gmail.com">
+          <button class="advertisements-form__submit button button--primary" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
@@ -234,7 +235,8 @@
     <section class="geoposition">
       <div class="geoposition__wrapper">
         <div class="geoposition__banner">
-          <h3 class="geoposition__banner-title">приглашаем к сотрудничеству дилеров!</h3>
+          <h2 class="visually-hidden">Местоположение</h2>
+          <p class="geoposition__banner-title">приглашаем к сотрудничеству дилеров!</p>
           <div class="geoposition__banner-address">
             <p class="geoposition__banner-street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="geoposition__banner-city">Санкт-Петербург</p>
@@ -245,8 +247,8 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo" href="#">
-      <img class="main-footer__logo-image" src="images/footer-logo.svg" width="128" height="24" alt="Кэт энерджи">
+    <a class="main-footer__logo logo" href="#">
+      <img class="logo__text" src="images/logo/logo-text-mobile.svg" width="128" height="24" alt="Кэт энерджи">
     </a>
     <ul class="main-footer__social-list social">
       <li class="social__item">
