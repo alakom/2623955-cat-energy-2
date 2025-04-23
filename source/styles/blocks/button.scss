@@ -1,3 +1,23 @@
 .button {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
 
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button--primary {
+  color: $basic-white;
+  background-color: $basic-green;
+}
+
+.button--secondary {
+  color: $special-dark-grey;
+  background-color: $basic_grey;
 }

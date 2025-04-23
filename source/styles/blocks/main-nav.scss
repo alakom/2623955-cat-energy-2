@@ -1,3 +1,9 @@
-.main-nav{
-
+.main-nav__link {
+  font-family: $secondary-font;
+  color: $basic-black;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
