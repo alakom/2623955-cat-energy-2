@@ -1,13 +1,8 @@
 .geoposition__banner-title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font($secondary-font, 16px, 20px, #111111);
   text-transform: uppercase;
-  color: #111111;
 }
 
 .geoposition__banner-address {
-  font-weight: 400;
-  line-height: 20px;
+  @include font($primary-font, 14px, 20px, $text-primary);
 }

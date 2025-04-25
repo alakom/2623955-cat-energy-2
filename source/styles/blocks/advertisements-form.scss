@@ -1,8 +1,4 @@
 .advertisements-form__email {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 100%;
-  color: $special-dark-grey;
+  @include font($secondary-font, 20px, 100%, $text-primary);
   text-transform: uppercase;
 }

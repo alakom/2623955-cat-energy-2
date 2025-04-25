@@ -1,7 +1,4 @@
 .copyright__link {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+  @include font($primary-font, 16px, 20px, $text-primary);
   text-decoration: none;
-  color: $special_dark-grey;
 }

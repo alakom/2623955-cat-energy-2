@@ -1,9 +1,5 @@
 .main-nav__link {
-  font-family: $secondary-font;
-  color: $basic-black;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  @include font($secondary-font, 20px, 20px, $secondary-color);
   text-decoration: none;
   text-transform: uppercase;
 }

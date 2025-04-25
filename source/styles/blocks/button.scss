@@ -1,8 +1,5 @@
 .button {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font($secondary-font, 16px, 20px, $secondary-color);
   text-decoration: none;
   text-transform: uppercase;
   border: none;
@@ -13,11 +10,11 @@
 }
 
 .button--primary {
-  color: $basic-white;
-  background-color: $basic-green;
+  color: $primary-color;
+  background-color: $accent-color;
 }
 
 .button--secondary {
-  color: $special-dark-grey;
-  background-color: $basic_grey;
+  color: $text-primary;
+  background-color: $bg-primary;
 }

@@ -1,0 +1,4 @@
+.product__name {
+  @include font($secondary-font, 16px, 20px, $text-secondary);
+  text-transform: uppercase;
+}

@@ -1,0 +1,8 @@
+.additional-product__name {
+  @include font($secondary-font, 16px, 16px, $text-secondary);
+  text-transform: uppercase;
+}
+
+.additional-product__benefit {
+  @include font($primary-font, 14px, 14px, $text-primary);
+}
