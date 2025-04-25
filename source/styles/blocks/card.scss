@@ -1,0 +1,18 @@
+.card {
+  background-color: $bg-primary;
+}
+
+.card__title {
+  @include font($secondary-font, 24px, 37px, $secondary-color);
+  text-transform: uppercase;
+}
+
+.card__description {
+  @include font($primary-font, 14px, 18px, $text-primary);
+}
+
+.card__nav-title {
+  @include font($secondary-font, 16px, 16px, $secondary-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}

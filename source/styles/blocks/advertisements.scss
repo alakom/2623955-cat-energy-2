@@ -1,0 +1,7 @@
+.advertisements__title {
+  @include font($secondary-font, 24px, 24px, $secondary-color);
+}
+
+.advertisements__subtitle {
+  @include font($secondary-font, 16px, 24px, $secondary-color);
+}

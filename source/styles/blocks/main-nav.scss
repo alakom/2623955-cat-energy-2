@@ -1,0 +1,5 @@
+.main-nav__link {
+  @include font($secondary-font, 20px, 20px, $secondary-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}

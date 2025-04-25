@@ -1,0 +1,8 @@
+.geoposition__banner-title {
+  @include font($secondary-font, 16px, 20px, #111111);
+  text-transform: uppercase;
+}
+
+.geoposition__banner-address {
+  @include font($primary-font, 14px, 20px, $text-primary);
+}

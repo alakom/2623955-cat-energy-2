@@ -1,0 +1,4 @@
+.advertisements-form__email {
+  @include font($secondary-font, 20px, 100%, $text-primary);
+  text-transform: uppercase;
+}

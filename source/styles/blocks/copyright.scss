@@ -1,0 +1,4 @@
+.copyright__link {
+  @include font($primary-font, 16px, 20px, $text-primary);
+  text-decoration: none;
+}

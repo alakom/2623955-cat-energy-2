@@ -1,0 +1,8 @@
+.show-more__title {
+  @include font($secondary-font, 16px, 20px, #111111);
+  text-transform: uppercase;
+}
+
+.show-more__subtitle {
+  @include font($primary-font, 12px, 16px, $text-primary);
+}

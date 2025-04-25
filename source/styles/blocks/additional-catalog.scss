@@ -1,0 +1,7 @@
+.additional-catalog__title {
+  @include font($secondary-font, 24px, 24px, $secondary-color);
+}
+
+.additional-catalog__promo-title {
+  @include font($primary-color, 16px, 20px, $primary-color);
+}

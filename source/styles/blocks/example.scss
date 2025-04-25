@@ -1,0 +1,21 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__title {
+  @include font($secondary-font, 36px, 40px, $secondary-color);
+}
+
+.example__features-item-title {
+  @include font($primary-font, 12px, 100%, $text-primary);
+}
+
+.example__features-item-content {
+  @include font($secondary-font, 24px, 24px, $secondary-color);
+  text-transform: uppercase;
+}
+
+.example__features-costs {
+  @include font($secondary-font, 14px, 20px, $secondary-color);
+  text-transform: uppercase;
+}
