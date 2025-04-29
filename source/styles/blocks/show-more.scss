@@ -1,3 +1,12 @@
+.show-more__description::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-color: #d3d3d3;
+  mask-image: url("../../icons/plus.svg");
+}
+
 .show-more__title {
   @include font($secondary-font, 16px, 20px, #111111);
   text-transform: uppercase;

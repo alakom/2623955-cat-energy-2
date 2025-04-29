@@ -1,1 +1,29 @@
-// .social
+.social__link {
+  font-size: 0;
+  width: 28px;
+  height: 22px;
+  display: block;
+  background-color: $icon-color-primary;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: $accent-color;
+}
+
+.social__link:active {
+  background-color: $accent-color;
+  opacity: 0.3;
+}
+
+.social__link--vkontakte {
+  mask-image: url("../../icons/vk.svg");
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/youtube.svg");
+}
+
+.social__link--telegram {
+  mask-image: url("../../icons/telegram.svg");
+}

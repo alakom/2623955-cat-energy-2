@@ -16,3 +16,26 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.card__nav-title::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 12px;
+  background-color: $secondary-color;
+  mask-image: url("../../icons/small-arrow.svg");
+}
+
+.card__nav-title:hover::after {
+  width: 32px;
+  mask-image: url("../../icons/big-arrow.svg");
+}
+
+.card__nav-title:active {
+  opacity: 0.3;
+  width: 32px;
+}
+
+.card__nav-title:active::after {
+  mask-image: url("../../icons/big-arrow.svg");
+}

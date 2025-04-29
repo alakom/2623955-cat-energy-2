@@ -3,3 +3,11 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.main-nav__toggle {
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  background-color: $secondary-color;
+  mask-image: url("../../icons/header-menu-mobile.svg");
+}

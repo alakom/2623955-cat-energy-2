@@ -1,1 +1,16 @@
-//.slider{}
+.slider__slide-curtain {
+  font-size: 0;
+  width: 24px;
+  height: 18px;
+  background-color: $text-primary;
+  mask-image: url("../../icons/thumb.svg");
+}
+
+.slider__slide-curtain:hover {
+  background-color: $accent-color;
+}
+
+.slider__slide-curtain:active {
+  background-color: $accent-color;
+  opacity: 0.6;
+}
