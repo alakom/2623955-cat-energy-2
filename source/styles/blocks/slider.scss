@@ -1,16 +1,17 @@
-.slider__slide-curtain {
-  font-size: 0;
+.slider__slide-curtain::after {
+  content: "";
   width: 24px;
   height: 18px;
+  display: block;
   background-color: $text-primary;
   mask-image: url("../../icons/thumb.svg");
 }
 
-.slider__slide-curtain:hover {
+.slider__slide-curtain:hover::after {
   background-color: $accent-color;
 }
 
-.slider__slide-curtain:active {
+.slider__slide-curtain:active::after {
   background-color: $accent-color;
   opacity: 0.6;
 }
