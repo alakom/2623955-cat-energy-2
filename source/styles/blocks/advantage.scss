@@ -1,1 +1,29 @@
-//.advantage
+.advantage::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage--leaf::before {
+  background-image: url("../../icons/icon-leaf.svg");
+  background-size: 24.8px 28px;
+}
+
+.advantage--preparation::before {
+  background-image: url("../../icons/icon-preparation.svg");
+  background-size: 26px 28.5px;
+}
+
+.advantage--eat::before {
+  background-image: url("../../icons/icon-eat.svg");
+  background-size: 25px 30px;
+}
+
+.advantage--clock::before {
+  background-image: url("../../icons/icon-clock.svg");
+  background-size: 26.09px 31px;
+}

@@ -1,5 +1,17 @@
 .card {
   background-color: $bg-primary;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.card--slim {
+  background-image: url("../../icons/slim-catalog-icon.svg");
+  background-size: 50px 52px;
+}
+
+.card--pro {
+  background-image: url("../../icons/pro-catalog-icon.svg");
+  background-size: 67px 50px;
 }
 
 .card__title {
@@ -15,4 +27,27 @@
   @include font($secondary-font, 16px, 16px, $secondary-color);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.card__nav-title::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 12px;
+  background-color: $secondary-color;
+  mask-image: url("../../icons/small-arrow.svg");
+}
+
+.card__nav-title:hover::after {
+  width: 32px;
+  mask-image: url("../../icons/big-arrow.svg");
+}
+
+.card__nav-title:active {
+  opacity: 0.3;
+  width: 32px;
+}
+
+.card__nav-title:active::after {
+  mask-image: url("../../icons/big-arrow.svg");
 }

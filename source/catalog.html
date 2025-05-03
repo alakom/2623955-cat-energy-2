@@ -16,11 +16,20 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image" src="images/logo/logo-icon-mobile.svg" width="33" height="38" alt="Логотип">
-      <img class="logo__text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Кэт энерджи">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo/logo-icon-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo/logo-icon-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="logo__image" src="images/logo/logo-icon-mobile.svg" width="33" height="38" alt="Логотип">
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/logo/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+        <img class="logo__text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Кэт энерджи">
+      </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="index.html">Главная</a></li>
@@ -290,13 +299,19 @@
     </a>
     <ul class="main-footer__social-list social">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в Вконтакте</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы в Ютубе</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Мы в Телеграме</span>
+        </a>
       </li>
     </ul>
     <div class="main-footer__copyright copyright">

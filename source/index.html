@@ -16,11 +16,20 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image" src="images/logo/logo-icon-mobile.svg" width="33" height="38" alt="Логотип">
-      <img class="logo__text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Кэт энерджи">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo/logo-icon-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo/logo-icon-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="logo__image" src="images/logo/logo-icon-mobile.svg" width="33" height="38" alt="Логотип">
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/logo/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+        <img class="logo__text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Кэт энерджи">
+      </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="index.html">Главная</a></li>
@@ -47,14 +56,14 @@
       <div class="features-catalog__wrapper">
         <h2 class="visually-hidden">Виды каталога</h2>
         <ul class="features-catalog__list">
-          <li class="features-catalog__item card">
+          <li class="features-catalog__item card card--slim">
             <h3 class="card__title">Похудение</h3>
             <p class="card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.</p>
             <a class="card__nav-title" href="catalog.html">Каталог slim
             </a>
           </li>
-          <li class="features-catalog__item card">
+          <li class="features-catalog__item card card--pro">
             <h3 class="card__title">Набор массы</h3>
             <p class="card__description">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
@@ -68,16 +77,16 @@
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Как это работает</h2>
         <ol class="advantages__list">
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--leaf">
             <p class="advantage__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--preparation">
             <p class="advantage__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--eat">
             <p class="advantage__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--clock">
             <p class="advantage__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ol>
@@ -114,7 +123,9 @@
             <source type="image/png" width="580" height="512" media="(min-width: 768px)" srcset="images/slider/cat-after-tablet@1x.png 1x, images/slider/cat-after-tablet@2x.png 2x">
             <img class="slider__slide" src="images/slider/cat-after-mobile@1x.png" srcset="images/slider/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после">
           </picture>
-          <button class="slider__slide-curtain" type="button">Управление слайдером</button>
+          <button class="slider__slide-curtain" type="button">
+            <span class="visually-hidden">Управление слайдером</span>
+          </button>
         </div>
       </div>
     </section>
@@ -144,13 +155,17 @@
     </a>
     <ul class="main-footer__social-list social">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в Вконтакте</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы в Ютубе</span></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span>
+        </a>
       </li>
     </ul>
     <div class="main-footer__copyright copyright">
