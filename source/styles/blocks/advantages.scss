@@ -1,3 +1,19 @@
 .advantages__title {
   @include font($secondary-font, 36px, 40px, $secondary-color);
 }
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

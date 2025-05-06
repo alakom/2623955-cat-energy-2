@@ -1,3 +1,9 @@
+.advertisements__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .advertisements__title {
   @include font($secondary-font, 24px, 24px, $secondary-color);
 }

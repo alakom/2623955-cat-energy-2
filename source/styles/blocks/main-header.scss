@@ -3,6 +3,59 @@
   color: $text-primary;
 }
 
+.main-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+    height: 50px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+    height: 59px;
+    margin-top: 55px;
+  }
+}
+
 .main-header__logo {
   padding: 0;
+}
+
+.main-header__logo-text {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-header__nav-toggle {
+  width: 24px;
+  height: 24px;
+  background-color: $secondary-color;
+  mask-image: url("../../icons/header-menu-mobile.svg");
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-header__nav-wrapper {
+  display: none;
+  position: absolute;
+  background-color: $primary-color;
+  width: 100%;
+  top: 65px;
+  left: 0;
+
+  @media (min-width: $tablet) {
+    display: inline;
+    position: static;
+    width: 436px;
+  }
 }
