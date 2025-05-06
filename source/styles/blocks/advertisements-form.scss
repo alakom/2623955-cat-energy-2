@@ -1,3 +1,12 @@
+.advertisements-form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
 .advertisements-form__email {
   @include font($secondary-font, 20px, 100%, $text-primary);
   text-transform: uppercase;

@@ -1,6 +1,8 @@
 .copyright__link {
   @include font($primary-font, 16px, 20px, $text-primary);
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright__link:active {

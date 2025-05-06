@@ -1,3 +1,20 @@
 .main-footer {
   background-color: $bg-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__social-list {
+  display: flex;
+  gap: 24px;
+}
+
+.main-footer__logo .logo .logo_text {
+  display: inline;
 }

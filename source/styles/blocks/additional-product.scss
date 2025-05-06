@@ -1,8 +1,39 @@
+.additional-product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .additional-product__name {
+  grid-column: span 2;
+
   @include font($secondary-font, 16px, 16px, $text-secondary);
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    grid-column: 1;
+  }
 }
 
 .additional-product__benefit {
   @include font($primary-font, 14px, 14px, $text-primary);
+}
+
+.additional-product__order {
+  grid-column: span 2;
+
+  @media (min-width: $tablet) {
+    grid-column: span 3;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 4;
+  }
 }

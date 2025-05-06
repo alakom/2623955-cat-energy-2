@@ -2,8 +2,43 @@
   background-color: #eaeaea;
 }
 
+.example__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .example__title {
   @include font($secondary-font, 36px, 40px, $secondary-color);
+}
+
+.example__features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+  }
+}
+
+.example__features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.example__features-item {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .example__features-item-title {

@@ -1,30 +1,82 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
   background-color: $bg-primary;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left top;
+  background-origin: content-box;
+
+  @media (min-width: $tablet) {
+    background-position: right center;
+    padding: 77px 30px 53px 53px;
+  }
+
+  @media (min-width: $desktop) {
+    background-position: left top;
+    padding: 41px 61px 55px 52px;
+  }
 }
 
 .card--slim {
   background-image: url("../../icons/slim-catalog-icon.svg");
   background-size: 50px 52px;
+
+  @media (min-width: $tablet) {
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: $desktop) {
+    background-size: 100px 106px;
+  }
 }
 
 .card--pro {
   background-image: url("../../icons/pro-catalog-icon.svg");
   background-size: 67px 50px;
+
+  @media (min-width: $tablet) {
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: $desktop) {
+    background-size: 134px 100px;
+  }
 }
 
 .card__title {
   @include font($secondary-font, 24px, 37px, $secondary-color);
+  margin: 0;
   text-transform: uppercase;
+  padding-left: 91px;
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 162px;
+  }
 }
 
 .card__description {
+  margin: 0;
+
   @include font($primary-font, 14px, 18px, $text-primary);
+
+  @media (min-width: $tablet) {
+    padding-right: 316px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 0;
+    padding-top: 109px;
+  }
 }
 
 .card__nav-title {
   @include font($secondary-font, 16px, 16px, $secondary-color);
+  display: flex;
   text-transform: uppercase;
   text-decoration: none;
 }

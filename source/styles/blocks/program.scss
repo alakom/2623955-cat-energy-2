@@ -1,7 +1,23 @@
 .program__wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: $bg-accent;
   color: $primary-color;
   font-family: $secondary-font;
+
+  @media (min-width: $tablet) {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .program__slogan {
@@ -15,4 +31,17 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.program__action {
+  position: absolute;
+  bottom: 0;
+
+  @media (min-width: $tablet) {
+    bottom: 526px;
+  }
+
+  @media (min-width: $desktop) {
+    position: static;
+  }
 }
