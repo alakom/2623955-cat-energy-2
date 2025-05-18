@@ -1,17 +1,35 @@
 .main-footer {
   background-color: $bg-primary;
+}
+
+.main-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @include block-margins--mobile();
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   @media (min-width: $tablet) {
+    @include block-margins--tablet();
+    padding-top: 55px;
+    padding-bottom: 55px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    @include block-margins--desktop();
+    max-width: 1220px;
+    padding-top: 66px;
+    padding-bottom: 66px;
   }
 }
 
 .main-footer__social-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 

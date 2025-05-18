@@ -1,5 +1,25 @@
+.advantages__wrapper {
+  @include block-margins--mobile();
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+
+    @include block-margins--tablet();
+  }
+
+  @media (min-width: $desktop) {
+    @include block-margins--desktop();
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
+}
+
 .advantages__title {
   @include font($secondary-font, 36px, 40px, $secondary-color);
+  margin: 0;
 }
 
 .advantages__list {

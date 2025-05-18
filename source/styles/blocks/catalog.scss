@@ -1,3 +1,15 @@
+.catalog {
+  @media (min-width: $tablet) {
+    @include block-margins--tablet();
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop) {
+    @include block-margins--desktop();
+    margin-bottom: 71px;
+  }
+}
+
 .catalog__title {
   @include font($secondary-font, 36px, 36px, $secondary-color);
 }

@@ -2,7 +2,17 @@
   display: flex;
   flex-direction: column;
 
+  @include block-margins--mobile();
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet) {
+    @include block-margins--tablet();
+    margin-bottom: 80px;
+  }
+
   @media (min-width: $desktop) {
+    @include block-margins--desktop();
+    margin-bottom: 96px;
     flex-direction: row;
     justify-content: space-between;
   }

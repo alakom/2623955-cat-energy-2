@@ -3,14 +3,29 @@
 }
 
 .example__wrapper {
+  @include block-margins--mobile();
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 101px;
+
+    @include block-margins--tablet();
+  }
+
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
+
+    @include block-margins--desktop();
+    padding: 0;
   }
 }
 
 .example__title {
   @include font($secondary-font, 36px, 40px, $secondary-color);
+  margin: 0;
 }
 
 .example__features {
@@ -34,6 +49,7 @@
   display: flex;
   justify-content: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .example__features-item {

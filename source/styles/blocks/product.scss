@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  @include block-margins--mobile();
+  padding-top: 20px;
+  padding-bottom: 25px;
+
   @media (min-width: $tablet) {
     grid-template-columns: repeat(1, 1fr);
   }

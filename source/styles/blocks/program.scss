@@ -1,5 +1,5 @@
 .program__wrapper {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -9,12 +9,16 @@
   color: $primary-color;
   font-family: $secondary-font;
 
+  @include block-margins--mobile();
+
   @media (min-width: $tablet) {
+    @include block-margins--tablet();
     background-color: $primary-color;
     color: $secondary-color;
   }
 
   @media (min-width: $desktop) {
+    @include block-margins--desktop();
     flex-direction: row;
     justify-content: center;
   }
