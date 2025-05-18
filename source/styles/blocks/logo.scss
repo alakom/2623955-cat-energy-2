@@ -1,1 +1,37 @@
-// .logo
+.logo {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet) {
+    width: fit-content;
+    justify-content: end;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop) {
+    width: fit-content;
+    justify-content: end;
+    gap: 14px;
+  }
+}
+
+.logo__image {
+  position: absolute;
+  left: 0;
+  top: -50%;
+
+  @media (min-width: $tablet) {
+    position: static;
+  }
+}
+
+.logo__text {
+  padding-left: 24px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}
