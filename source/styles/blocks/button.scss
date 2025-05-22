@@ -1,8 +1,13 @@
 .button {
   @include font($secondary-font, 16px, 20px, $secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  width: fit-content;
+  min-height: auto;
 
   &:hover {
     cursor: pointer;
@@ -12,6 +17,14 @@
 .button--primary {
   color: $primary-color;
   background-color: $accent-color;
+  padding: 10px 0;
+
+  @media (min-width: $tablet) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+  }
 }
 
 .button--secondary {

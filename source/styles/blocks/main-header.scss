@@ -52,9 +52,11 @@
 
 .main-header__nav-wrapper {
   background-color: $primary-color;
+  display: none;
 }
 
 .main-header__nav-wrapper--not-js {
+  display: inline;
   grid-row: 2;
   grid-column: 1 / -1;
 
@@ -64,6 +66,7 @@
 }
 
 .main-header__nav-wrapper--open {
+  display: inline;
   position: absolute;
   width: 100%;
   top: 65px;

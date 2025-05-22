@@ -15,37 +15,103 @@
     @include block-margins--tablet();
     background-color: $primary-color;
     color: $secondary-color;
+    align-items: center;
+    position: static;
   }
 
   @media (min-width: $desktop) {
     @include block-margins--desktop();
+    position: relative;
     flex-direction: row;
     justify-content: center;
   }
 }
 
-.program__slogan {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.program__intro {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
-
-.program__action {
-  position: absolute;
-  bottom: 0;
+.program__info {
+  text-align: center;
+  padding: 27px 0 29px;
 
   @media (min-width: $tablet) {
-    bottom: 526px;
+    position: relative;
+    margin-left: 90px;
+    margin-bottom: 21px;
+    max-width: 420px;
+    padding: 0;
+    text-align: left;
   }
 
   @media (min-width: $desktop) {
     position: static;
+    margin-top: 81px;
+    margin-bottom: 0;
+    margin-left: 0;
+    max-width: 420px;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.program__slogan {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+.program__intro {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 52px;
+  }
+}
+
+.program__action {
+  position: absolute;
+  min-width: calc(100% - 40px);
+  left: 20px;
+  bottom: 0;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    min-width: auto;
+    left: 0;
+    bottom: -104px;
+  }
+
+  @media (min-width: $desktop) {
+    position: static;
+  }
+}
+
+.program__promo {
+  display: block;
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    position: relative;
+    left: -47px;
   }
 }

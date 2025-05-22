@@ -1,7 +1,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   background-color: $bg-primary;
   background-repeat: no-repeat;
   background-position: left top;
@@ -9,38 +8,42 @@
 
   @media (min-width: $tablet) {
     background-position: right center;
-    padding: 77px 30px 53px 53px;
   }
 
   @media (min-width: $desktop) {
     background-position: left top;
-    padding: 41px 61px 55px 52px;
   }
 }
 
 .card--slim {
   background-image: url("../../icons/slim-catalog-icon.svg");
   background-size: 50px 52px;
+  padding: 21px 20px 18px;
 
   @media (min-width: $tablet) {
     background-size: 200px 211px;
+    padding: 77px 63px 53px 52px;
   }
 
   @media (min-width: $desktop) {
     background-size: 100px 106px;
+    padding: 41px 61px 55px 52px;
   }
 }
 
 .card--pro {
   background-image: url("../../icons/pro-catalog-icon.svg");
   background-size: 67px 50px;
+  padding: 24px 20px 18px;
 
   @media (min-width: $tablet) {
     background-size: 268px 200px;
+    padding: 77px 29px 53px 52px;
   }
 
   @media (min-width: $desktop) {
     background-size: 134px 100px;
+    padding: 47px 67px 55px 52px;
   }
 }
 
@@ -48,37 +51,96 @@
   @include font($secondary-font, 24px, 37px, $secondary-color);
   margin: 0;
   text-transform: uppercase;
-  padding-left: 91px;
+  padding-top: 9px;
+  padding-left: 70px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet) {
+    @include font($secondary-font, 36px, 36px, $secondary-color);
+    padding: 0;
+    padding-left: 1px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 36px;
+    padding-left: 162px;
+    padding-bottom: 73px;
+  }
+}
+
+.card--pro .card__title {
+  padding-top: 6px;
+  padding-left: 78px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
     padding-left: 0;
   }
 
   @media (min-width: $desktop) {
+    padding-top: 30px;
     padding-left: 162px;
   }
 }
 
 .card__description {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
   margin: 0;
+  margin-bottom: 15px;
 
   @include font($primary-font, 14px, 18px, $text-primary);
 
   @media (min-width: $tablet) {
-    padding-right: 316px;
+    @include font($primary-font, 16px, 24px, $text-primary);
+    border-bottom: none;
+    padding-bottom: 48px;
+    margin: 0;
   }
 
   @media (min-width: $desktop) {
-    padding-right: 0;
-    padding-top: 109px;
+    padding: 0;
+    padding-bottom: 23px;
+  }
+}
+
+.card--pro .card__description {
+  @media (min-width: $tablet) {
+    @include font($primary-font, 16px, 24px, $text-primary);
+    padding-right: 289px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    padding-bottom: 23px;
+  }
+}
+
+.card--slim .card__description {
+  @media (min-width: $tablet) {
+    @include font($primary-font, 16px, 24px, $text-primary);
+    padding-right: 253px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    padding-bottom: 23px;
   }
 }
 
 .card__nav-title {
   @include font($secondary-font, 16px, 16px, $secondary-color);
   display: flex;
+  align-items: center;
+  gap: 15px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    @include font($secondary-font, 20px, 20px, $secondary-color);
+    gap: 25px;
+  }
 }
 
 .card__nav-title::after {
@@ -97,7 +159,6 @@
 
 .card__nav-title:active {
   opacity: 0.3;
-  width: 32px;
 }
 
 .card__nav-title:active::after {

@@ -2,6 +2,12 @@
   position: relative;
 }
 
+.geoposition__wrapper iframe {
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+
 .geoposition__banner {
   background-color: $primary-color;
   display: flex;
@@ -23,5 +29,6 @@
 }
 
 .geoposition__image-map {
+  display: block;
   width: 100%;
 }
