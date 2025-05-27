@@ -1,3 +1,37 @@
+.advantage {
+  position: relative;
+  counter-increment: chapter 1;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 40px 0 57px;
+    grid-template-columns: auto;
+    max-height: 280px;
+    max-width: 249px;
+    gap: 31px;
+  }
+
+  @media (min-width: $tablet) {
+    grid-template-columns: auto;
+    max-height: 280px;
+    gap: 31px;
+  }
+}
+
+.advantage::after {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+
+    @include font($secondary-font, 280px, 280px, $bg-primary);
+    content: counter(chapter);
+  }
+}
+
 .advantage::before {
   content: "";
   width: 60px;
@@ -6,16 +40,29 @@
   background-color: $accent-color;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .advantage--leaf::before {
   background-image: url("../../icons/icon-leaf.svg");
   background-size: 24.8px 28px;
+
+  @media (min-width: $tablet) {
+    background-size: 30px 32px;
+  }
 }
 
 .advantage--preparation::before {
   background-image: url("../../icons/icon-preparation.svg");
   background-size: 26px 28.5px;
+
+  @media (min-width: $tablet) {
+    background-size: 25.95px 28.68px;
+  }
 }
 
 .advantage--eat::before {
@@ -26,4 +73,21 @@
 .advantage--clock::before {
   background-image: url("../../icons/icon-clock.svg");
   background-size: 26.09px 31px;
+
+  @media (min-width: $tablet) {
+    background-size: 25.97px 31.19px;
+  }
+}
+
+.advantage__description {
+  @include font($primary-font, 14px, 18px, $text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  z-index: 3;
+
+  @media (min-width: $tablet) {
+    @include font($primary-font, 16px, 24px, $text-primary);
+  }
 }
