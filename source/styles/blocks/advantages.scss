@@ -33,6 +33,7 @@
 }
 
 .advantages__list {
+  counter-reset: chapter 0;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -41,7 +42,8 @@
 
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
     row-gap: 37px;
   }
 

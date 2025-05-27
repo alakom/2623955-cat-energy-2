@@ -1,10 +1,14 @@
 .advantage {
+  position: relative;
+  counter-increment: chapter 1;
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 20px;
 
   @media (min-width: $tablet) {
+    padding: 40px 0 57px;
     grid-template-columns: auto;
+    max-height: 280px;
     max-width: 249px;
     gap: 31px;
   }
@@ -13,6 +17,18 @@
     grid-template-columns: auto;
     max-height: 280px;
     gap: 31px;
+  }
+}
+
+.advantage::after {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+
+    @include font($secondary-font, 280px, 280px, $bg-primary);
+    content: counter(chapter);
   }
 }
 
@@ -69,6 +85,7 @@
   align-items: center;
   justify-content: start;
   margin: 0;
+  z-index: 3;
 
   @media (min-width: $tablet) {
     @include font($primary-font, 16px, 24px, $text-primary);

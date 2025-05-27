@@ -1,6 +1,7 @@
 .header {
   background-color: $primary-color;
   color: $text-primary;
+  z-index: 5;
 }
 
 .main-header {
@@ -12,6 +13,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 65px;
+  z-index: 5;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -43,16 +45,32 @@
   width: 24px;
   height: 24px;
   background-color: $secondary-color;
-  mask-image: url("../../icons/header-menu-mobile.svg");
 
   @media (min-width: $tablet) {
     display: none;
   }
 }
 
+.main-header__nav-toggle--not-js {
+  background-color: transparent;
+  border: none;
+}
+
+.main-header__nav-toggle--open {
+  mask-image: url("../../icons/close.svg");
+}
+
+.main-header__nav-toggle--close {
+  mask-image: url("../../icons/header-menu-mobile.svg");
+}
+
 .main-header__nav-wrapper {
   background-color: $primary-color;
   display: none;
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+  }
 }
 
 .main-header__nav-wrapper--not-js {

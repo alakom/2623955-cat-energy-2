@@ -1,16 +1,31 @@
 .geoposition__wrapper {
   position: relative;
+  display: block;
+  background-image: url("../../images/map/map-mobile@1x.jpg");
+  background-size: 100% 362px;
 }
 
 .geoposition__wrapper iframe {
   border: none;
   display: block;
-  max-width: 100%;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .geoposition__banner {
   background-color: $primary-color;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include block-margins--mobile();
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+    padding: 61px 70px;
+  }
 
   @media (min-width: $desktop) {
     position: absolute;
@@ -20,15 +35,32 @@
 }
 
 .geoposition__banner-title {
+  margin: 0;
+
   @include font($secondary-font, 16px, 20px, #111111);
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    @include font($secondary-font, 20px, 26px, #111111);
+    text-align: start;
+    max-width: 163px;
+  }
 }
 
 .geoposition__banner-address {
   @include font($primary-font, 14px, 20px, $text-primary);
+
+  @media (min-width: $tablet) {
+    @include font($primary-font, 16px, 20px, $text-primary);
+    text-align: end;
+    max-width: 157px;
+  }
 }
 
-.geoposition__image-map {
-  display: block;
-  width: 100%;
+.geoposition__banner-street {
+  margin: 0;
+}
+
+.geoposition__banner-city {
+  margin: 0;
 }
